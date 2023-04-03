@@ -17,7 +17,7 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
 CPPFLAGS := $(INC_FLAGS) -MMD -MP
 
-CXXFLAGS := -g -W -Wall -Wextra -pedantic -O0
+CXXFLAGS := -g -W -Wall -Wextra -pedantic -O0 -std=c++11
 
 $(BUILD_DIR)/%.cpp.o: %.cpp
 	$(MKDIR_P) $(dir $@)

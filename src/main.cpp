@@ -1,13 +1,18 @@
 #include <iostream>
-#include "sloppyMath.h"
+#include "Problems.h"
 
 int main()
 {
-   Vector v1;
-   v1.print();
-   Matrix m1;
-   m1.print();
-   // This is a git credential test
-   std::cout << "Hello, World!" << std::endl;
+   Problems p;
+
+   while (1)
+   {
+      std::string input;
+      std::cout << "Enter Problem to Run: ";
+      std::cin >> input;
+      std::cout << "\n\n";
+
+      p.Run(input);
+   }
    return 1;
 }
